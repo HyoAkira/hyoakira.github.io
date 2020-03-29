@@ -19,14 +19,14 @@
 
 Ondan sonra link görünecektir ekranda.
 </p>
-<a name="getir" href="#" >Tıkla</a>
+<a name="getir" onclick=wow(element)>Tıkla</a>
 
 <script>
 var version = prompt('İstediğiniz clover sürümünü yazın.', '5107');
 var link = ('https://github.com/CloverHackyColor/CloverBootloader/releases/download/' + version + '/CLOVERX64.efi.zip')
 element = get.elementByName('getir')
 
-element.href=link
+function wow(element) { element.href=link }
 </script> 
     </body>
 </html>
